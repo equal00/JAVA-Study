@@ -1,0 +1,16 @@
+package variable; // *선언 필수 : 자바 파일을 구분하기 위한 폴더
+
+public class Var1 {
+    public static void main(String[] args) {
+        System.out.println(20); //변경 10 -> 20
+        System.out.println(20); //변경 10 -> 20
+        System.out.println(20); //변경 10 -> 20
+    }
+}
+
+// 변수의 배경 및 필요성
+// 10 -> 20 으로 변경 시 총 3번의 코드 변경 발생
+// 만약 수정할 부분이 100개라면 100개의 코드 모두 변경
+
+// 사용자가 입력한 값은 항상 변한다.
+// 따라서 어딘가에 값을 보관해두고 필요할 때, 값을 꺼내서 읽을 수 있는 저장소가 필요하다
