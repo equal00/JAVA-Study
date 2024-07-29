@@ -1,0 +1,27 @@
+package variable;
+
+public class Var7 {
+    public static void main(String[] args) {
+        // type
+        int a = 100; //정수
+        double b = 10.5; //실수
+        boolean c = true; //볼리언(boolean) true, false 입력 가능 (참거짓)
+        char d = 'A'; // 문자 하나 (작은 따옴표)
+        String e = "Hello Java"; // 문자열, 문자열을 다루기 위한 특별한 타입 (앞에 대문자, 큰따옴표)
+
+        // command + c, v 가 귀찮을 때, command + d
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+    }
+}
+
+// 자신의 타입에 맞는 데이터 사용
+// int a = "백원"; 정수 타입에 문자열(x)
+// int a - "100"; 정수 타입에 문자열(x)
+// java: not a statement
+
+// 리터럴
+// 고정된 값을 의미하는 프로그래밍 언어
