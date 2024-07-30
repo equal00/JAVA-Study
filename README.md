@@ -8,3 +8,5 @@ sout = System.out.println( );
 
 
 commend + D = (commend + C) + (commend + V)
+commend + R = 이전에 실행한 코드 실행
+commend + shift + F10 = 지금 코드 실행
