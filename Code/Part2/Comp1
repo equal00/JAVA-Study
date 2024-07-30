@@ -1,0 +1,26 @@
+package operator;
+
+public class Comp1 {
+    public static void main(String[] args) {
+        int a = 2;
+        int b = 3;
+
+        System.out.println(a == b);
+        System.out.println(a != b);
+        System.out.println(a > b);
+        System.out.println(a < b);
+        System.out.println(a <= b);
+        System.out.println(a >= b);
+
+        // 결과를 boolean 함수에 담음
+        boolean result = a==b;
+        System.out.println(result);
+    }
+}
+
+
+/*
+주의사항
+=   : 대입 연산자, 변수에 값을 대입
+==  : 동등한지 확인하는 비교 연산자
+*/
