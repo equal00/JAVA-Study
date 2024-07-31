@@ -14,7 +14,7 @@ public class Logical1 {
 
         System.out.println("!: NOT 연산");
         System.out.println(!true);
-        System.out.println(!false);a
+        System.out.println(!false);
 
         System.out.println("변수 활용");
         boolean a = true;
