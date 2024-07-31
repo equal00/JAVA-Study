@@ -6,7 +6,7 @@ psvm = public static void main(String[] args) { }
 
 sout = System.out.println( );
 
-iter = 
+iter = for (int number : numbers) {}
 _____________________________________________________
 
 commend + D = (commend + C) + (commend + V)
