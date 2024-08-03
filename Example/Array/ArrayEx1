@@ -1,0 +1,34 @@
+package array.ex;
+
+import java.sql.SQLOutput;
+
+public class ArrayEx1 {
+    public static void main(String[] args) {
+        int[] students = {90, 80, 70, 60, 50};
+
+        int total = 0;
+        double average = 0;
+        for (int i =0; i < students.length; i++) {
+            total += students[i];
+        }
+        average = (total / students.length);
+
+        System.out.println("점수 총합: " + total);
+        System.out.println("점수 평균: " + average);
+    }
+}
+
+/*
+문제1. 배열을 사용하도록 변경
+int student1 = 90;
+int student1 = 80;
+int student1 = 70;
+int student1 = 60;
+int student1 = 50;
+
+int total = student1 + student2 + student3 + student4 + student5;
+double average = (double) total / 5;
+
+System.out.println("점수 총합: " + total);
+System.out.println("점수 평균: " + average);
+ */
