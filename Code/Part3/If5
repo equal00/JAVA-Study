@@ -1,0 +1,57 @@
+package cond;
+
+public class If5 {
+    public static void main(String[] args) {
+        int price = 10000;
+        int age = 10;
+        int discount = 0;
+
+        if (price >= 1000) {
+            discount = discount + 1000;
+            System.out.println("10000원 이상 구매, 1000원 할인");
+        }
+
+        if (age <= 10) {
+            discount = discount + 1000;
+            System.out.println("어린이 1000원 할인");
+        }
+        System.out.println("총 할인 금액: " + discount + "원");
+
+        if (true)
+            System.out.println("중괄호 생략");
+
+        if (false)
+            System.out.println("중괄호 생략");
+            System.out.println("중괄호 생략안됨");
+    }
+}
+
+/*
+if문에 else if를 함께 사용하는 것은 서로 연관된 조건일 때 사용
+서로 관련 없는 독립 조건이면 else if를 사용하지 않고, if문을 각각 사용
+
+ex)
+예시 1. if-else 사용: 서로 연관 조건 : 하나로 묶을 때
+if (condition1) {
+    작업1 수행
+} else if (condition2) {
+    작업2 수행
+}
+
+예시 2. if 각각 사용: 독립 조건일 때
+if (condition1) {
+    작업1 수행
+}
+if (condition2) {
+    작업2 수행
+}
+
+만약 else if를 사용할 경우 첫 번째 조건을 만족해 다른 할인을 놓칠 수 있다.
+
+if문 {} 생략
+ - 실행하는 문장이 하나일 경우 {}를 생략해도 된다.
+ - but, 명령이 한개만 있는 경우에도 중괄호 사용 권장
+ - why?
+  가독성 : 코드를 더 쉽게 읽게 만들어줌
+  유지보수성 : 나중에 코드를 사용할 때, 오류를 덜 발생시킬 수 있음
+ */
