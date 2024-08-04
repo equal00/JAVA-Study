@@ -1,0 +1,34 @@
+package cond;
+
+public class Switch2 {
+    public static void main(String[] args) {
+        int grade = 2;
+
+        int coupon;
+
+        switch (grade) {
+            case 1:
+                coupon = 1000;
+                break;
+            case 2:
+                coupon = 2000;
+                break;
+            case 3:
+                coupon = 3000;
+                break;
+            default:
+                coupon = 500;
+        }
+        System.out.println("발급받은 쿠폰: " + coupon );
+    }
+}
+
+/*
+if문 vs switch문
+
+swutch문은 조건식이 특정 case와 같은지만 체크할 수 있다
+= 값이 같은지 확인하는 연산만 가능 (문자도 가능)
+
+if문은 참과 거짓의 결과가 나오는 조건식을 자유롭게 사용
+
+*/
