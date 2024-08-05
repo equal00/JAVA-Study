@@ -1,0 +1,24 @@
+package method;
+
+public class Method1 {
+    public static void main(String[] args) {
+        // 계산1
+        int a = 1;
+        int b = 2;
+        System.out.println(a + " + " + b + " 연산 수행");
+        int sum1 = a + b;
+        System.out.println("결과1 출력: " + sum1);
+
+        System.out.println("================");
+        // 계산2
+        int x = 10;
+        int y = 20;
+        System.out.println(x + " + " + y + " 연산 수행");
+        int sum2 = x + y;
+        System.out.println("결과2 출력: " + sum2 );
+    }
+}
+
+// 위 코드 둘 다 변수를 두개 선언하고, 어떤 연산을 수행하는지 출력하고, 두 변수를 더해 결과값 출력
+// 이처럼 같은 계산을 반복해야 된다면? 또는 해당 코드들을 다 수정해야된다면? 이라는 문제
+// 같은 함수를 통해 다른 입력값으로 여러 번 호출할 수 있다.
