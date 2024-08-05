@@ -1,0 +1,12 @@
+package method;
+
+public class MethodCasting1 {
+    public static void main(String[] args) {
+        double number = 2.5;
+        // printnumber(number); double을 int형으로 대입해서 컴파일 애러
+        printNumber((int) number); // 명시적 형변환 double -> int
+    }
+    public static void printNumber(int n) {
+        System.out.println("숫지: " + n);
+    }
+}
