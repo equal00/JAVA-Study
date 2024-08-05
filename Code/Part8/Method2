@@ -1,0 +1,37 @@
+package method;
+
+public class Method2 {
+    public static void main(String[] args) {
+        printHeader();
+        System.out.println("= 시스템을 동작합니다 =");
+        printFooter();
+    }
+    public static void printHeader() {
+        System.out.println("= 시스템을 시작합니다 =");
+        return;
+    }
+    public static void printFooter() {
+        System.out.println("= 시스템을 종료합니다 = ");
+    }
+}
+
+
+/*
+메서드 정의
+ - 제어자 (Mpdifier)
+ - 반환 타입 (Return Type)
+ - 메서드 이름 (Method Name)
+ - 매개변수 (Parameter)
+ - 메서드 본문 (Method Body)
+
+매개변수가 없는 경우
+ - 선언: 매개변수를 비워두고 정의
+ - 호출: 인수를 비워두고 호출
+
+반환 타입이 없는 경우
+ - 선언: 반환타입을 void로 정의
+ - 호출: 메서드만 호출, 반환 값을 받지 않으면 된다.
+
+모든 메서드는 항상 return;을 호출
+return을 만나면 해당 매서드를 종료
+*/
