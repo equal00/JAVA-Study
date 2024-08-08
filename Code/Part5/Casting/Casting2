@@ -1,0 +1,14 @@
+package casting;
+
+public class Casting2 {
+    public static void main(String[] args) {
+        double doubleValue = 1.5;
+        int intValue = 0;
+
+        // intValue = doubleValue; // 컴파일 오류 발생
+        intValue = (int) doubleValue;
+        System.out.println(intValue);
+    }
+}
+
+// int형은 double형 보다 숫자의 표현 범위가 작다.
