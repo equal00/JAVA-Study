@@ -1,0 +1,26 @@
+package scope;
+
+public class Scope3_1 {
+    public static void main(String[] args) {
+        int m = 10;
+        int temp = 0;
+        if (m > 0) {
+            temp = m * 2;
+            System.out.println("temp = " + temp);
+        }
+        System.out.println("m = " + m);
+    }
+}
+
+/*
+임시변수 tmep는 if 조건이 만족할 때 임시로 잠깐 사용되는 변수
+but, temp main() 코드 블록이 선언되면 문제점
+
+ - 비효율적인 메모리 사용
+    : temp는 if코드 블록에서만 필요함
+    : but, main() 코드 블록이 종료될 때까지 메모리에 유지
+    : 따라서, 불필요한 메모리가 낭비
+ - 코드 복잡성 증가
+    : temp를 if 코드 블록에서만 사용하면, if 코드 블록이 끝난 후 temp를 생각하지 않아도 된다.
+    : 지금같은 경우 유지 보수를 할 때, 변수 m과 temp를 모두 신경써야한다.
+*/
