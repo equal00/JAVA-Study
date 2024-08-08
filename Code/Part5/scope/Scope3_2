@@ -1,0 +1,30 @@
+package scope;
+
+public class Scope3_2 {
+    public static void main(String[] args) {
+        int m = 10;
+        if (m > 0) {
+            int temp = m * 2;
+            System.out.println("temp = " + temp);
+        }
+        System.out.println("m = " + m);
+    }
+}
+
+/*
+while문 vs for문
+
+while문 
+ - 변수 i의 스코프가 main() 메서드의 전체 
+for문
+ - 변수 i의 스코프가 for문 안으로 한정
+ 
+for문 안에서만 사용되는 카운터 변수가 있다면
+while문 보다는 for문을 사용해서 스코프 범위를 제한하는 것이
+메모리 사용과 유지보수 관점에서 좋다.
+
+변수는 꼭 필요한 범위로 지정해서 사용
+why?
+ - 메모리를 효율적으로 사용하기 위해
+ - 유지보수하기 더 좋은 코드를 만들기 위해
+*/
